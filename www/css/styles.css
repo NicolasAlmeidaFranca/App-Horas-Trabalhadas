@@ -1,4 +1,3 @@
-
 body {
   background: #9dd2ea;
   margin-top: 40px;
@@ -15,9 +14,7 @@ h2 {
   font-size: 30px;
 }
 
-#resultado {
-  margin-left: 125px;
-  margin-top: -32px;
+#placaBusca {
   font-size: 20px;
   width: 60%;
   height: 33px;
@@ -31,7 +28,7 @@ h2 {
 	letter-spacing: 1px;
 }
 
-#calcular {
+#voltar {
   color: black;
   text-transform: uppercase;
   text-align: center;
@@ -49,15 +46,15 @@ h2 {
   box-shadow: 0 4px rgba(0,0,0,0.2);
 
    }
-  #calcular:hover {
+  #voltar:hover {
   background-color: #cee9ea;
    }
-  #calcular:active {
+  #voltar:active {
     transform: scale(0.9);
     }
-
-
-#irBuscar {
+   
+#buscarRegistro {
+  margin-top: -52px;
   color: black;
   text-transform: uppercase;
   text-align: center;
@@ -68,17 +65,20 @@ h2 {
   height: 8px;
   border: 2px solid transparent;
   padding: 15px;
-  margin-left: 216px;
-  margin-top: -100px;
+  margin-left: 220px;
   border-radius: 50px;
   transition: .2s;
   box-shadow: 0 4px rgba(0,0,0,0.2);
 
    }
-  #irBuscar:hover {
+  #buscarRegistro:hover {
   background-color: #cee9ea;
    }
-  #irBuscar:active {
+  #buscarRegistro:active {
     transform: scale(0.9);
     }
- 
+
+.espaco {
+  margin-top: -100px;
+}
+
