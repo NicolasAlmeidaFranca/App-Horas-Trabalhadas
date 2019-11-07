@@ -1,13 +1,20 @@
 body {
-  background: #9dd2ea;
+  background:#339999;
   margin-top: 40px;
   margin-left: 10px;
 }
 
-h2 {
+img {
+  margin-top: -10px;
+  width: 380px;
+  height: 340px;
+  margin-left: -30px;
+}
+
+h1 {
   margin-top: -20px;
   text-transform: uppercase;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Courier New", monospace;
   color: white;
   text-align: center;
   text-shadow: 4px 4px 5px black;
@@ -40,21 +47,25 @@ h2 {
   border: 2px solid transparent;
   padding: 15px;
   margin-right: 220px;
-  margin-top: 10px;
+  margin-top: 30px;
   border-radius: 50px;
-  transition: .2s;
-  box-shadow: 0 4px rgba(0,0,0,0.2);
-
-   }
-  #voltar:hover {
-  background-color: #cee9ea;
+  box-shadow: 0 5px #999;
+  cursor: pointer;
+  transition: .2s;;
    }
   #voltar:active {
-    transform: scale(0.9);
+    transform: translateY(4px);
+    box-shadow:0 3px #666;
+    }
+    #voltar img {
+      width: 35px;
+      height: 35px;
+      margin-top: -18px;
+      margin-left: 3px;
     }
    
 #buscarRegistro {
-  margin-top: -52px;
+  margin-top: -90px;
   color: black;
   text-transform: uppercase;
   text-align: center;
@@ -67,18 +78,23 @@ h2 {
   padding: 15px;
   margin-left: 220px;
   border-radius: 50px;
+  box-shadow: 0 5px #999;
+  cursor: pointer;
   transition: .2s;
-  box-shadow: 0 4px rgba(0,0,0,0.2);
-
-   }
-  #buscarRegistro:hover {
-  background-color: #cee9ea;
    }
   #buscarRegistro:active {
-    transform: scale(0.9);
+    transform: translateY(4px);
+    box-shadow:0 3px #666;
+    }
+    #buscarRegistro img {
+      width: 35px;
+      height: 35px;
+      margin-top: -18px;
+      margin-left: 3px;
     }
 
-.espaco {
-  margin-top: -100px;
+.valor {
+  margin-top: -15px;
 }
+
 
