@@ -11,75 +11,63 @@ function preencheHora(){
     $("#horaSaida").html(hora);
 }
 
-function preencheMinuto(){
-  var minuto = "";
-    for(var x = 0; x <= 59; x++){
-      if(x <= 9){
-        minuto+="<option value="+x+">0"+x+"</option>";
-      }else{
-        minuto+="<option value="+x+">"+x+"</option>";
-      }
-    }
-    $("#minutoEntrada").html(minuto);
-    $("#minutoSaida").html(minuto);
-}
-
-$(document).on("click","#calcular",function(){
-  var horaEntrada =parseFloat($("option:selected",("#horaEntrada")).val());
-  var horaSaida = parseFloat($("option:selected",("#horaSaida")).val());
-  var minutoEntrada =parseFloat($("option:selected",("#minutoEntrada")).val());
-  var minutoSaida = parseFloat($("option:selected",("#minutoSaida")).val());
-  var valorHora = parseFloat($("option:selected",("#funcao")).val());
-  
-  var total = ((horaSaida + (minutoSaida/60)) - (horaEntrada + (minutoEntrada/60))) * valorHora;
-
-  $("#resultado").val(total.toFixed(2));
- 
- var parametros ={
-      "nome":$("#nome").val(),
-      "entrada":horaEntrada+":"+minutoEntrada+":00",
-      "saida":horaSaida+":"+minutoSaida+":00",
-      "funcao":$("option:selected",("#funcao")).text(),
-      "valor": total.toFixed(2)
-  };
-  $.ajax({
-      type:"post",//como vou enviar os dados ao servidor
-      url:"https://nicolasafco.000webhostapp.com/cadastra.php",//para onde vou enviar
-      data:parametros,//o que eu vou enviar
-      //caso esteja tudo certo executa esse codigo
-      success: function(data){
-        navigator.notification.alert(data);
-      },
-      //caso algo esteja errado executa esse codigo
-      error: function(data){
-        navigator.notification.alert("Erro ao cadastrar!");
-      }
-    });
-});
 $(document).on("click","#irBuscar",function(){
   $(location).attr("href","listar.html");
 });
-$(document).on("click","#voltar",function(){
-  $(location).attr("href","index.html");
+
+
+$(document).on("click","#cadastrar",function(){
+
+var parametros ={
+"nome":$("#nome").val(),
+"modelo":$("#modelo").val(),
+"marca":$("#marca").val(),
+"tipo":$("#tipo").val(),
+"placa":$("#placa").val(),
+"horaEntrada" : $("#horaEntrada").val()
+};
+$.ajax({
+type: "post",
+url: "https://nicolasafco.000webhostapp.com/cadastra.php",
+
+data: parametros,
+success: function(data){
+  navigator.notification.alert(data);
+
+  $("nome").val("");
+  $("modelo").val("");
+  $("marca").val("");
+  $("tipo").val("");
+  $("placa").val("");
+  $("horaEntrada").val("")
+  
+
+},
+error: function(data){
+  navigator.notification.alert("Erro ao cadastrar");
+  }
+ })
 });
 
+//buscar
 $(document).on("click","#buscarRegistro",function(){
-  var parametro ={
-      "nome":$("#nomeBusca").val()
+var parametro ={
+      "placa":$("#placaBusca").val()
     };
     
     $.ajax({
       type:"post",//como vou enviar os dados ao servidor
       url:"https://nicolasafco.000webhostapp.com/buscar.php",//para onde vou enviar
       data:parametro,
-      dataType:"json",
+      datatype:"json",
       //caso esteja tudo certo executa esse codigo
       success: function(data){
-        $("#nome").val(data.funcionario.nome);
-        $("#funcao").val(data.funcionario.funcao);
-        $("#entrada").val(data.funcionario.entrada);
-        $("#saida").val(data.funcionario.saida);
-        $("#valor").val(data.funcionario.valor);
+        $("#placa").val(data.veiculo.nr_placa);
+        $("#nome").val(data.veiculo.nome);
+        $("#marca").val(data.veiculo.marca);
+        $("#tipo").val(data.veiculo.tipo);
+        $("#modelo").val(data.veiculo.modelo);
+        $("#horaEntrada").val(data.veiculo.horaEntrada);
       },
       //caso algo esteja errado executa esse codigo
       error: function(data){
