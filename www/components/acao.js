@@ -56,7 +56,7 @@ var parametro ={
     };
     
     $.ajax({
-      type:"post",//como vou enviar os dados ao servidor
+      type:"post",
       url:"https://nicolasafco.000webhostapp.com/buscar.php",//para onde vou enviar
       data:parametro,
       datatype:"json",
