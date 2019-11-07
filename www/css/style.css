@@ -1,14 +1,31 @@
 
 body {
-  background: #9dd2ea;
+  background: #0e8296;
   margin-top: 40px;
   margin-left: 10px;
 }
 
-h2 {
-  margin-top: -20px;
+img {
+  margin-top: 30px;
+  width: 430px;
+  height: 400px;
+  margin-left: -80px;
+}
+
+h3 {
+  margin-top: -5px;
   text-transform: uppercase;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Courier New", monospace;
+  color: white;
+  text-align: center;
+  text-shadow: 4px 4px 5px black;
+  font-size: 30px;
+}
+
+h2 {
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-family: "Courier New", monospace;
   color: white;
   text-align: center;
   text-shadow: 4px 4px 5px black;
@@ -19,7 +36,7 @@ h2 {
   margin-left: 125px;
   margin-top: -32px;
   font-size: 20px;
-  width: 60%;
+  width: 62%;
   height: 33px;
   padding: 5px;
   border-radius: 5px;
@@ -45,17 +62,20 @@ h2 {
   margin-right: 220px;
   margin-top: 10px;
   border-radius: 50px;
+  box-shadow: 0 5px #999;
+  cursor: pointer;
   transition: .2s;
-  box-shadow: 0 4px rgba(0,0,0,0.2);
-
-   }
-  #calcular:hover {
-  background-color: #cee9ea;
    }
   #calcular:active {
-    transform: scale(0.9);
+    transform: translateY(4px);
+    box-shadow:0 3px #666;
     }
-
+    #calcular img {
+      width: 35px;
+      height: 35px;
+      margin-top: -17px;
+      margin-left: 3px;
+    }
 
 #irBuscar {
   color: black;
@@ -69,16 +89,47 @@ h2 {
   border: 2px solid transparent;
   padding: 15px;
   margin-left: 216px;
-  margin-top: -100px;
   border-radius: 50px;
+  box-shadow: 0 5px #999;
+  cursor: pointer;
   transition: .2s;
-  box-shadow: 0 4px rgba(0,0,0,0.2);
-
-   }
-  #irBuscar:hover {
-  background-color: #cee9ea;
    }
   #irBuscar:active {
-    transform: scale(0.9);
+    transform: translateY(4px);
+    box-shadow:0 3px #666;
     }
- 
+    #irBuscar img {
+      width: 35px;
+      height: 35px;
+      margin-top: -18px;
+      margin-left: 3px;
+    }
+
+#seguir {
+  color: black;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #cee9ea;
+  line-height: 5px;
+  font-size: 12px;
+  width: 102px;
+  height: 8px;
+  border: 2px solid transparent;
+  padding: 15px;
+  margin-left: 220px;
+  margin-top: 5px;
+  border-radius: 50px;
+  box-shadow: 0 5px #999;
+  cursor: pointer;
+  transition: .2s;
+   }
+  #seguir:active {
+    transform: translateY(4px);
+    box-shadow:0 3px #666;
+    }
+    #seguir img {
+      width: 35px;
+      height: 35px;
+      margin-top: -18px;
+      margin-left: 3px;
+    } 
