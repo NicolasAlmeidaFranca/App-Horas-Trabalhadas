@@ -6,10 +6,9 @@ body {
 }
 
 img {
-  margin-top: 30px;
   width: 430px;
   height: 400px;
-  margin-left: -80px;
+  margin-left: -95px;
 }
 
 h3 {
@@ -48,7 +47,7 @@ h2 {
 	letter-spacing: 1px;
 }
 
-#calcular {
+#cadastrar {
   color: black;
   text-transform: uppercase;
   text-align: center;
@@ -59,21 +58,21 @@ h2 {
   height: 8px;
   border: 2px solid transparent;
   padding: 15px;
-  margin-right: 220px;
-  margin-top: 10px;
+  margin-left: 12px;
+  margin-top: 20px;
   border-radius: 50px;
   box-shadow: 0 5px #999;
   cursor: pointer;
   transition: .2s;
    }
-  #calcular:active {
+  #cadastrar:active {
     transform: translateY(4px);
     box-shadow:0 3px #666;
     }
-    #calcular img {
-      width: 20px;
-      height: 35px;
-      margin-top: -17px;
+    #cadastrar img {
+      width: 28px;
+      height: 30px;
+      margin-top: -15.5px;
       margin-left: 3px;
     }
 
@@ -105,7 +104,7 @@ h2 {
       margin-left: 3px;
     }
 
-#seguir {
+#seguirum {
   color: black;
   text-transform: uppercase;
   text-align: center;
@@ -116,20 +115,133 @@ h2 {
   height: 8px;
   border: 2px solid transparent;
   padding: 15px;
-  margin-left: 220px;
-  margin-top: 5px;
+  margin-left: 160px;
+  margin-top: -85px;
   border-radius: 50px;
   box-shadow: 0 5px #999;
   cursor: pointer;
   transition: .2s;
    }
-  #seguir:active {
+  #seguirum:active {
     transform: translateY(4px);
     box-shadow:0 3px #666;
     }
-    #seguir img {
+    #seguirum img {
       width: 35px;
       height: 35px;
       margin-top: -18px;
       margin-left: 3px;
     } 
+
+#seguirdois {
+  color: black;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #cee9ea;
+  line-height: 5px;
+  font-size: 12px;
+  width: 102px;
+  height: 8px;
+  border: 2px solid transparent;
+  padding: 15px;
+  margin-left: 160px;
+  margin-top: 10px;
+  border-radius: 50px;
+  box-shadow: 0 5px #999;
+  cursor: pointer;
+  transition: .2s;
+   }
+  #seguidois:active {
+    transform: translateY(4px);
+    box-shadow:0 3px #666;
+    }
+    #seguirdois img {
+      width: 35px;
+      height: 35px;
+      margin-top: -18px;
+      margin-left: 3px;
+    }     
+
+#nome {
+  font-size: 20px;
+  width: 100%;
+  height: 33px;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: right;
+	background: rgba(0, 0, 0, 0.2);
+	box-shadow: inset 0px 4px rgba(0, 0, 0, 0.2);
+	color: white;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+	letter-spacing: 1px;
+}
+
+#funcao {
+  font-size: 20px;
+  width: 100%;
+  height: 33px;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: right;
+	background: rgba(0, 0, 0, 0.2);
+	box-shadow: inset 0px 4px rgba(0, 0, 0, 0.2);
+	color: white;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+	letter-spacing: 1px;
+}
+
+#marca {
+ font-size: 20px;
+  width: 100%;
+  height: 33px;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: right;
+	background: rgba(0, 0, 0, 0.2);
+	box-shadow: inset 0px 4px rgba(0, 0, 0, 0.2);
+	color: white;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+	letter-spacing: 1px;
+}
+
+#modelo {
+  font-size: 20px;
+  width: 100%;
+  height: 33px;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: right;
+	background: rgba(0, 0, 0, 0.2);
+	box-shadow: inset 0px 4px rgba(0, 0, 0, 0.2);
+	color: white;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+	letter-spacing: 1px;
+}
+
+#placa {
+  font-size: 20px;
+  width: 100%;
+  height: 33px;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: right;
+	background: rgba(0, 0, 0, 0.2);
+	box-shadow: inset 0px 4px rgba(0, 0, 0, 0.2);
+	color: white;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+	letter-spacing: 1px;
+}
+
+#horaEntrada {
+  font-size: 20px;
+  width: 80%;
+  height: 33px;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: right;
+	background: rgba(0, 0, 0, 0.2);
+	box-shadow: inset 0px 4px rgba(0, 0, 0, 0.2);
+	color: white;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+	letter-spacing: 1px;
+}
