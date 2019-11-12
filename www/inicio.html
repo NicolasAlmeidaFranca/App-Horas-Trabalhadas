@@ -16,6 +16,7 @@
 
   <link rel="stylesheet" href="components/loader.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
   <link rel="stylesheet" href="css/style.css">
 
 
@@ -24,7 +25,7 @@
   <div class="container">
     <div class="row">
       <div class="col-xs-12 calc">
-        <h3>Calcule as horas</h3>
+        <h3>Cadastre seu veículo</h3>
       </div>
     </div>
     <div class="row">
@@ -41,14 +42,14 @@
         <div class="form-group">
           <label for="">Tipo de veículo:</label>
           <select id="funcao" class="form-control">
-            <option >Carro</option>
-            <option >Moto</option>
+            <option>Carro</option>
+            <option>Moto</option>
           </select>
         </div>
       </div>
        <div class="col-xs-6">
         <div class="form-group">
-          <label for="">Marca do veículo:</label>
+          <label for="">Marca:</label>
            <input type="text" id="marca" class="form-control">
         </div>
       </div>
@@ -57,43 +58,36 @@
     <div class="row">
       <div class="col-xs-6">
         <div class="form-group">
-          <label for="">Modelo do veículo:</label>
+          <label for="">Modelo:</label>
            <input type="text" id="modelo" class="form-control">
         </div>
       </div>
       <div class="col-xs-6">
         <div class="form-group">
-          <label for="">Placa do veículo:</label>
+          <label for="">Placa:</label>
            <input type="text" id="placa" class="form-control">
         </div>
       </div>
     </div>
 
     <div class="row">
+     <div class="col-xs-6 hora">
       <div class="form-group">
-        <div class="col-xs-12">
-          <label for="">Horário de entrada do veículo:</label>
-          <div class="row">
-              <div class="col-xs-6">
+          <label for="">Hora de entrada:</label>
                 <input type="time" id="horaEntrada"></input>
               </div>
-          </div>
+          </div> 
+     <div class="col-xs-6">
+      <div class="form-group">
+           <button class="btn btn-info" type="button" id="cadastrar"><img src="cad.png"></button>
         </div>
-       
       </div>
     </div>
+    <hr>
+
     <div class="row">
       <div class="form-group">
         <div class="col-xs-12">
-           <button class="btn btn-info" type="button" id="cadastrar"><img src="calc.png"></button>
-        </div>
-      </div>
-    </div>
-  
-    <hr>
-    <div class="row">
-      <div class="form-group">
-        <div class="col-xs-12 buscar">
           <h3> Prossiga para buscar seu veículo </h3>
         </div>
       </div>
@@ -101,7 +95,7 @@
     <div class="row">
       <div class="form-group">
         <div class="col-xs-12">
-         <a class="btn btn-info" href="listar.html" type="button" id="seguir"><img src="frente.png"></a>
+         <a class="btn btn-info" href="listar.html" type="button" id="seguirdois"><img src="frente.png"></a>
         </div>
       </div>
     </div>
